@@ -51,7 +51,7 @@ function resize(){
 	});
 
 	// $('.cont-wrap').width(win_w).height(win_h);
-	$('.mv').height(win_h);
+	$('.sec').height(win_h);
 }
 
 //canvas 1フレームごとのアニメーション処理

@@ -16,12 +16,12 @@
 				$('.bg-canvas').stop().animate({
 					'backgroundColor': sec_color[i]
 				}, 500);
-				$('body').stop().animate({
-					'backgroundColor': sec_color[i]
-				}, 500);
+				$('body').css({'backgroundColor': sec_color[i]});
 				view_sec = i;
 			}
 		}//for
+		var maxheight = $('body').height() - $('.mv').height();
+		$('.nav .pos').css('top', scrolltop / maxheight * 150);
 	});//scroll
 
 	//ホバーでイメージ変更

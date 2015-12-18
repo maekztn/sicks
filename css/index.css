@@ -48,12 +48,18 @@ body{
 .sec:not(:first-child){
 	margin-top: 100px;
 	padding-top: 10px;
+	position: relative;
 }
 .sec .wrap{
 	width: 900px;
-	padding: 100px 0 100px;
-	margin: 0 auto;
 	letter-spacing: -.4em;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 400px;
 }
 .sec .wrap .inner{
 	margin-right: -50px;
@@ -252,8 +258,7 @@ body{
 	top: 0;
 	left: 4px;
 }
-.nav:after{
-	content: "";
+.nav .pos{
 	display: block;
 	width: 20px;
 	height: 20px;
