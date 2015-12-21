@@ -34,7 +34,6 @@
 		}));
 		$(this).append(img_wrap);
 	});
-
 	$('.sec-img li').on('mouseover', function(){
 		var src = $('img', this).attr('src');
 		$(this).parent().parent().find('p img').attr('src', src);
